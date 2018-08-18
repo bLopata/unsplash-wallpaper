@@ -15,7 +15,7 @@ async function randy() {
     followRedirects: true
   });
 
-  const _dat = path.join(__dirname, `image1.jpg`);
+  const _dat = path.join(__dirname, '.\\bin\\image1.jpg');
   const save = fs.writeFileSync(_dat, res.data);
   return save;
 }
